@@ -1,0 +1,153 @@
+<style>
+main 
+{position: relative;
+      margin: 0;
+        max-width: 2400px;}
+
+body 
+{font-family: 'Merriweather',serif;
+font-family: 'Jura','Merriweather', sans-serif;
+       font-size: 18px;
+       color: #333;
+    position: relative;
+   height: 1800px;
+    background: linear-gradient(-55deg, #99D4D8 0%, rgba(160, 159, 187, 0.05) 100%);  }
+*,
+*:before,
+*:after,
+{box-sizing: border-box; }
+h1, h2, h3, h4, h5, h6
+{margin: 0;}
+
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+.header {
+    display: flex;
+    width: 100%;
+    padding-top: 0px;
+    margin: 0px;
+
+position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0;
+
+    border-bottom: 1px solid aqua ;
+}
+
+/*Навигация */
+.nav{
+    font-size: 16px;
+    text-transform: uppercase;
+        position: relative;
+    
+}
+.nav__link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 7px;
+     position: relative;
+    color: darkgrey;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #03758f;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.nav__link:hover {
+    color: #03758f;
+}
+
+.nav__link:hover:after,
+.nav__link.active:after {
+    opacity: 1;
+}
+
+.nav__link.active {
+    color: #03758f;
+}
+
+/*Передник*/
+
+.container-fluid {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+.intro {
+font-family:"Jura";
+Position:relative;
+top:130px;
+text-align: center;
+}
+
+
+/* Features
+===================*/
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+       margin: 25px 0;
+    padding-top: 100px;
+    padding-left: 130px;
+    padding-right: 50px;
+}
+
+.features__item {
+    width: 18%;
+    padding: 0 40px;
+    margin: 25px 0;
+
+    text-align: center;
+}
+
+.features__icon {
+    margin-bottom: 25px;
+}
+
+.features__title {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    color: #03758f;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.features__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6c7279;
+}
+
